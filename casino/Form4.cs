@@ -176,37 +176,19 @@ namespace casino
                 poligon[i] = 0;
             }
 
-            for (int i = 0; i < Y; i++)
+            for(int i = 0; i < Y; i++)
             {
-                int mina = r1.Next(0, 24);
-                if (poligon[mina] == 0) {
-                    poligon[mina] = 1;
-                }
-                else
-                {
-                    for(int j = 0; j < 24; j++)
-                    {
-                        int h = r1.Next(0, 2);
-                        if(h == 0)
-                        {
-                            if (poligon[j] == 0)
-                            {
-                                poligon[j] = 1;
-                                break;
-                            }
-                        }
-                        else
-                        {
-                            if (poligon[23-j] == 0)
-                            {
-                                poligon[23-j] = 1;
-                                break;
-                            }
-                        }
-                    }
-                }
+                poligon[i] = 1;
             }
-            
+
+            for (int i = 0; i < 24; i++)
+            {
+                int a = poligon[i];
+                int k = r1.Next(0, 24);
+                poligon[i] = poligon[k];
+                poligon[k] = a;
+            }
+
             games = 1;
 
             String f = "";
