@@ -15,6 +15,8 @@ namespace casino
     {
         public Double BalancePlayer = 1000;
 
+        String NamePlayer = "Player";
+
         public Form1()
         {
             InitializeComponent();
@@ -41,6 +43,7 @@ namespace casino
 
             label3.Text = "____________________________________________________________________________________________________________________________________________________________________";
 
+            label7.Text = NamePlayer;
         }
 
         private void button3_Click(object sender, EventArgs e)
