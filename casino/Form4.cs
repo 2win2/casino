@@ -14,10 +14,49 @@ namespace casino
     {
         public Double BalancePlayer;
 
+        Single X;
+        Single Y;
+
+        int[] poligon = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+
+        double win = 0;
+
+        int games = 0;
+
         Random r1 = new Random();
         public Form4()
         {
             InitializeComponent();
+        }
+
+        private void check(int i)
+        {
+            if (games == 0)
+            {
+                MessageBox.Show("Вы не начали игру");
+                return;
+            }
+
+            if (poligon[i] == -1)
+            {
+                MessageBox.Show("Вы уже выбирали это поле");
+                return;
+            }
+            else if (poligon[i] == 0)
+            {
+                win += (X / (24 - Y)) * Y + (win / (24 - Y));
+                poligon[i] = -1;
+                label4.Text = String.Format("Текущий выйгрыш {0:F2} руб.", win);
+            }
+            else
+            {
+                MessageBox.Show("Вы нарвались на мину");
+                games = 0;
+                win = 0;
+                label4.Visible = false;
+                button28.Visible = false;
+                return;
+            }
         }
 
         private void Form4_Load(object sender, EventArgs e)
@@ -34,7 +73,8 @@ namespace casino
             label3.Text = "Введите количество мин";
 
             button27.Text = "Старт";
-
+            
+            
             label4.Text = " ";
 
             button28.Text = "Забрать выйгрыш";
@@ -81,7 +121,6 @@ namespace casino
 
         private void button27_Click(object sender, EventArgs e)
         {
-            Single X;
 
             var number = Single.TryParse(textBox1.Text, System.Globalization.NumberStyles.Number,
                 System.Globalization.NumberFormatInfo.CurrentInfo, out X);
@@ -92,7 +131,6 @@ namespace casino
                 return;
             }
 
-            Single Y;
 
             number = Single.TryParse(textBox2.Text, System.Globalization.NumberStyles.Number,
                 System.Globalization.NumberFormatInfo.CurrentInfo, out Y);
@@ -106,12 +144,208 @@ namespace casino
             if (X <= 0)
             {
                 MessageBox.Show("Сумма должна быть больше нуля");
+                return;
             }
 
             if (X > BalancePlayer)
             {
                 MessageBox.Show("Недостаточно средств");
+                return;
             }
+
+            if(Y <= 0 )
+            {
+                MessageBox.Show("Количество мин должно быть больше нуля");
+                return;
+            }
+
+            if(Y >= 24)
+            {
+                MessageBox.Show("Количество мин должно быть меньше 24");
+                return;
+            }
+ 
+            button28.Visible = true;
+            label4.Visible = true;
+            label4.Text = String.Format("Текущий выйгрыш 0 руб.");
+            BalancePlayer -= X;
+            label1.Text = String.Format("Баланс\n{0:F2} руб.", BalancePlayer);
+
+            for (int i = 0; i < 24; i++)
+            {
+                poligon[i] = 0;
+            }
+
+            for (int i = 0; i < Y; i++)
+            {
+                int mina = r1.Next(0, 24);
+                if (poligon[mina] == 0) {
+                    poligon[mina] = 1;
+                }
+                else
+                {
+                    for(int j = 0; j < 24; j++)
+                    {
+                        int h = r1.Next(0, 2);
+                        if(h == 0)
+                        {
+                            if (poligon[j] == 0)
+                            {
+                                poligon[j] = 1;
+                                break;
+                            }
+                        }
+                        else
+                        {
+                            if (poligon[23-j] == 0)
+                            {
+                                poligon[23-j] = 1;
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            games = 1;
+
+            String f = "";
+            for (int i = 0; i < 24; i++)
+            {
+                f += poligon[i];
+            }
+            label5.Text = f;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            check(0);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            check(1);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            check(2);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            check(3);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            check(4);
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            check(5);
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            check(6);
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            check(7);
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            check(8);
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            check(9);
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            check(10);
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            check(11);
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            check(12);
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            check(13);
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            check(14);
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            check(15);
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            check(16);
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            check(17);
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            check(18);
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            check(19);
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            check(20);
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            check(21);
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            check(22);
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            check(23);
+        }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            BalancePlayer += win;
+            games = 0;
+            win = 0;
+            label4.Visible = false;
+            button28.Visible = false;
+            label1.Text = String.Format("Баланс\n{0:F2} руб.", BalancePlayer);
+            return;
         }
     }
 }
