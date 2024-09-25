@@ -33,11 +33,6 @@ namespace casino
 
         private void check(int i)
         {
-            if (games == 0)
-            {
-                MessageBox.Show("Вы не начали игру");
-                return;
-            }
 
             if (poligon[i] == -1)
             {
@@ -125,7 +120,11 @@ namespace casino
 
         private void button27_Click(object sender, EventArgs e)
         {
-
+            if(games == 1)
+            {
+                MessageBox.Show("Вы уже начали игру");
+                return;
+            }
             var number = Single.TryParse(textBox1.Text, System.Globalization.NumberStyles.Number,
                 System.Globalization.NumberFormatInfo.CurrentInfo, out X);
 
@@ -229,144 +228,264 @@ namespace casino
 
         private void button3_Click(object sender, EventArgs e)
         {
+            if (games == 0)
+            {
+                MessageBox.Show("Вы не начали игру");
+                return;
+            }
             check(0);
             button3.BackColor = ColorButton;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+            if (games == 0)
+            {
+                MessageBox.Show("Вы не начали игру");
+                return;
+            }
             check(1);
             button4.BackColor = ColorButton;
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            if (games == 0)
+            {
+                MessageBox.Show("Вы не начали игру");
+                return;
+            }
             check(2);
             button5.BackColor = ColorButton;
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
+            if (games == 0)
+            {
+                MessageBox.Show("Вы не начали игру");
+                return;
+            }
             check(3);
             button6.BackColor = ColorButton;
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
+            if (games == 0)
+            {
+                MessageBox.Show("Вы не начали игру");
+                return;
+            }
             check(4);
             button7.BackColor = ColorButton;
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
+            if (games == 0)
+            {
+                MessageBox.Show("Вы не начали игру");
+                return;
+            }
             check(5);
             button8.BackColor = ColorButton;
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
+            if (games == 0)
+            {
+                MessageBox.Show("Вы не начали игру");
+                return;
+            }
             check(6);
             button9.BackColor = ColorButton;
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
+            if (games == 0)
+            {
+                MessageBox.Show("Вы не начали игру");
+                return;
+            }
             check(7);
             button12.BackColor = ColorButton;
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
+            if (games == 0)
+            {
+                MessageBox.Show("Вы не начали игру");
+                return;
+            }
             check(8);
             button13.BackColor = ColorButton;
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
+            if (games == 0)
+            {
+                MessageBox.Show("Вы не начали игру");
+                return;
+            }
             check(9);
             button14.BackColor = ColorButton;
         }
 
         private void button15_Click(object sender, EventArgs e)
         {
+            if (games == 0)
+            {
+                MessageBox.Show("Вы не начали игру");
+                return;
+            }
             check(10);
             button15.BackColor = ColorButton;
         }
 
         private void button18_Click(object sender, EventArgs e)
         {
+            if (games == 0)
+            {
+                MessageBox.Show("Вы не начали игру");
+                return;
+            }
             check(11);
             button18.BackColor = ColorButton;
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
+            if (games == 0)
+            {
+                MessageBox.Show("Вы не начали игру");
+                return;
+            }
             check(12);
             button10.BackColor = ColorButton;
         }
 
         private void button16_Click(object sender, EventArgs e)
         {
+            if (games == 0)
+            {
+                MessageBox.Show("Вы не начали игру");
+                return;
+            }
             check(13);
             button16.BackColor = ColorButton;
         }
 
         private void button19_Click(object sender, EventArgs e)
         {
+            if (games == 0)
+            {
+                MessageBox.Show("Вы не начали игру");
+                return;
+            }
             check(14);
             button19.BackColor = ColorButton;
         }
 
         private void button20_Click(object sender, EventArgs e)
         {
+            if (games == 0)
+            {
+                MessageBox.Show("Вы не начали игру");
+                return;
+            }
             check(15);
             button20.BackColor = ColorButton;
         }
 
         private void button23_Click(object sender, EventArgs e)
         {
+            if (games == 0)
+            {
+                MessageBox.Show("Вы не начали игру");
+                return;
+            }
             check(16);
             button23.BackColor = ColorButton;
         }
 
         private void button25_Click(object sender, EventArgs e)
         {
+            if (games == 0)
+            {
+                MessageBox.Show("Вы не начали игру");
+                return;
+            }
             check(17);
             button25.BackColor = ColorButton;
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
+            if (games == 0)
+            {
+                MessageBox.Show("Вы не начали игру");
+                return;
+            }
             check(18);
             button11.BackColor = ColorButton;
         }
 
         private void button17_Click(object sender, EventArgs e)
         {
+            if (games == 0)
+            {
+                MessageBox.Show("Вы не начали игру");
+                return;
+            }
             check(19);
             button17.BackColor = ColorButton;
         }
 
         private void button21_Click(object sender, EventArgs e)
         {
+            if (games == 0)
+            {
+                MessageBox.Show("Вы не начали игру");
+                return;
+            }
             check(20);
             button21.BackColor = ColorButton;
         }
 
         private void button22_Click(object sender, EventArgs e)
         {
+            if (games == 0)
+            {
+                MessageBox.Show("Вы не начали игру");
+                return;
+            }
             check(21);
             button22.BackColor = ColorButton;
         }
 
         private void button24_Click(object sender, EventArgs e)
         {
+            if (games == 0)
+            {
+                MessageBox.Show("Вы не начали игру");
+                return;
+            }
             check(22);
             button24.BackColor = ColorButton;
         }
 
         private void button26_Click(object sender, EventArgs e)
         {
+            if (games == 0)
+            {
+                MessageBox.Show("Вы не начали игру");
+                return;
+            }
             check(23);
             button26.BackColor = ColorButton;
         }
