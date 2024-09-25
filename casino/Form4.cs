@@ -31,6 +31,34 @@ namespace casino
             InitializeComponent();
         }
 
+        private void OpenMines()
+        {
+            if (poligon[0] == 1) button3.BackColor = Color.Red;
+            if (poligon[1] == 1) button4.BackColor = Color.Red;
+            if (poligon[2] == 1) button5.BackColor = Color.Red;
+            if (poligon[3] == 1) button6.BackColor = Color.Red;
+            if (poligon[4] == 1) button7.BackColor = Color.Red;
+            if (poligon[5] == 1) button8.BackColor = Color.Red;
+            if (poligon[6] == 1) button9.BackColor = Color.Red;
+            if (poligon[7] == 1) button12.BackColor = Color.Red;
+            if (poligon[8] == 1) button13.BackColor = Color.Red;
+            if (poligon[9] == 1) button14.BackColor = Color.Red;
+            if (poligon[10] == 1) button15.BackColor = Color.Red;
+            if (poligon[11] == 1) button18.BackColor = Color.Red;
+            if (poligon[12] == 1) button10.BackColor = Color.Red;
+            if (poligon[13] == 1) button16.BackColor = Color.Red;
+            if (poligon[14] == 1) button19.BackColor = Color.Red;
+            if (poligon[15] == 1) button20.BackColor = Color.Red;
+            if (poligon[16] == 1) button23.BackColor = Color.Red;
+            if (poligon[17] == 1) button25.BackColor = Color.Red;
+            if (poligon[18] == 1) button11.BackColor = Color.Red;
+            if (poligon[19] == 1) button17.BackColor = Color.Red;
+            if (poligon[20] == 1) button21.BackColor = Color.Red;
+            if (poligon[21] == 1) button22.BackColor = Color.Red;
+            if (poligon[22] == 1) button24.BackColor = Color.Red;
+            if (poligon[23] == 1) button26.BackColor = Color.Red;
+        }
+
         private void check(int i)
         {
 
@@ -41,7 +69,7 @@ namespace casino
             }
             else if (poligon[i] == 0)
             {
-                win += (X / (24 - Y)) * Y + (win / (24 - Y));
+                win += (X / (24 - Y)) * Y + (1.5 * win / (24 - Y));
                 poligon[i] = -1;
                 label4.Text = String.Format("Текущий выйгрыш {0:F2} руб.", win);
                 ColorButton = Color.Green;
@@ -54,6 +82,7 @@ namespace casino
                 label4.Visible = false;
                 button28.Visible = false;
                 ColorButton = Color.Red;
+                OpenMines();
                 return;
             }
         }
@@ -498,6 +527,7 @@ namespace casino
             label4.Visible = false;
             button28.Visible = false;
             label1.Text = String.Format("Баланс\n{0:F2} руб.", BalancePlayer);
+            OpenMines();
             return;
         }
     }
