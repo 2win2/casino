@@ -26,22 +26,11 @@ namespace casino
         {
             this.Text = "Ракетка";
 
-            button2.Text = " ";
-            button1.Text = " ";
-
             label4.Text = " ";
             label6.Text = " ";
 
             label1.Text = String.Format("Баланс\n{0:F2} руб.", BalancePlayer);
 
-            label5.Text = "Введите сумму ставки";
-            label2.Text = "Введите коэффициент";
-
-            label3.Text = "История";
-
-            button4.Text = "Полетели";
-
-            label7.Text = "Максимальный коэффициент 100";
         }
 
         private void button1_Click(object sender, EventArgs e)

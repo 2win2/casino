@@ -92,46 +92,35 @@ namespace casino
             this.Text = "Мины";
 
             label1.Text = String.Format("Баланс\n{0:F2} руб.", BalancePlayer);
-
-            button1.Text = " ";
-            button2.Text = " ";
-
-            label2.Text = "Введите сумму ставки";
-
-            label3.Text = "Введите количество мин";
-
-            button27.Text = "Старт";
-            
-            
+             
             label4.Text = " ";
 
-            button28.Text = "Забрать выйгрыш";
             button28.Visible = false;
 
-            button3.Text = " "; button3.BackColor = Color.White;
-            button4.Text = " "; button4.BackColor = Color.White;
-            button5.Text = " "; button5.BackColor = Color.White;
-            button6.Text = " "; button6.BackColor = Color.White;
-            button7.Text = " "; button7.BackColor = Color.White;
-            button8.Text = " "; button8.BackColor = Color.White;
-            button9.Text = " "; button9.BackColor = Color.White;
-            button10.Text = " "; button10.BackColor = Color.White;
-            button11.Text = " "; button11.BackColor = Color.White;
-            button12.Text = " "; button12.BackColor = Color.White;
-            button13.Text = " "; button13.BackColor = Color.White;
-            button14.Text = " "; button14.BackColor = Color.White;
-            button15.Text = " "; button15.BackColor = Color.White;
-            button16.Text = " "; button16.BackColor = Color.White;
-            button17.Text = " "; button17.BackColor = Color.White;
-            button18.Text = " "; button18.BackColor = Color.White;
-            button19.Text = " "; button19.BackColor = Color.White;
-            button20.Text = " "; button20.BackColor = Color.White;
-            button21.Text = " "; button21.BackColor = Color.White;
-            button22.Text = " "; button22.BackColor = Color.White;
-            button23.Text = " "; button23.BackColor = Color.White;
-            button24.Text = " "; button24.BackColor = Color.White;
-            button25.Text = " "; button25.BackColor = Color.White;
-            button26.Text = " "; button26.BackColor = Color.White;
+            button3.BackColor = Color.White;
+            button4.BackColor = Color.White;
+            button5.BackColor = Color.White;
+            button6.BackColor = Color.White;
+            button7.BackColor = Color.White;
+            button8.BackColor = Color.White;
+            button9.BackColor = Color.White;
+            button10.BackColor = Color.White;
+            button11.BackColor = Color.White;
+            button12.BackColor = Color.White;
+            button13.BackColor = Color.White;
+            button14.BackColor = Color.White;
+            button15.BackColor = Color.White;
+            button16.BackColor = Color.White;
+            button17.BackColor = Color.White;
+            button18.BackColor = Color.White;
+            button19.BackColor = Color.White;
+            button20.BackColor = Color.White;
+            button21.BackColor = Color.White;
+            button22.BackColor = Color.White;
+            button23.BackColor = Color.White;
+            button24.BackColor = Color.White;
+            button25.BackColor = Color.White;
+            button26.BackColor = Color.White;
         }
 
         private void Form4_FormClosed(object sender, FormClosedEventArgs e)

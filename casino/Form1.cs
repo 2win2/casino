@@ -26,22 +26,7 @@ namespace casino
         {
             this.Text = "1win Casino";
 
-            button1.Text = " ";
-            button2.Text = " ";
-            button3.Text = " ";
-            button4.Text = " ";
-            button6.Text = " ";
-            button5.Text = "Взять 1000 в кредит";
-
             label1.Text = String.Format("Баланс\n{0:F2} руб.", BalancePlayer);
-
-            label2.Text = "Roulette Wheel";
-            label5.Text = "Ракетка";
-            label6.Text = "Мины";
-
-            label4.Text = "Быстрые игры";
-
-            label3.Text = "____________________________________________________________________________________________________________________________________________________________________";
 
             label7.Text = NamePlayer;
         }

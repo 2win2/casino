@@ -25,16 +25,7 @@ namespace casino
             this.Text = "Roulette Wheel";
             label1.Text = String.Format("Баланс\n{0:F2} руб.", BalancePlayer);
 
-            label5.Text = "Введите сумму ставки";
-
             label6.Text = " ";
-
-            button1.Text = " ";
-            button2.Text = " ";
-
-            button4.Text = "Черный";
-            button5.Text = "Красный";
-            button6.Text = "Зеленый";
 
         }
 
