@@ -54,8 +54,10 @@ namespace casino
 
         private void button5_Click(object sender, EventArgs e)
         {
-            BalancePlayer += 1000;
-            label1.Text = String.Format("Баланс\n{0:F2} руб.", BalancePlayer);
+            Form5 form_5 = new Form5();
+            form_5.BalancePlayer = BalancePlayer;
+            form_5.Show();
+            Hide();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -63,6 +65,14 @@ namespace casino
             Form4 form_4 = new Form4();
             form_4.BalancePlayer = BalancePlayer;
             form_4.Show();
+            Hide();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Form6 form_6 = new Form6();
+            form_6.BalancePlayer = BalancePlayer;
+            form_6.Show();
             Hide();
         }
     }

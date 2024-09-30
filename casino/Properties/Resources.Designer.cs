@@ -183,6 +183,16 @@ namespace casino.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Hamster_Kombat_PNG_1_transformed {
+            get {
+                object obj = ResourceManager.GetObject("Hamster-Kombat-PNG-1-transformed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap i__2__transformed {
             get {
                 object obj = ResourceManager.GetObject("i-_2_-transformed", resourceCulture);
@@ -196,6 +206,36 @@ namespace casino.Properties {
         internal static System.Drawing.Bitmap i__2__transformed__1_ {
             get {
                 object obj = ResourceManager.GetObject("i-_2_-transformed (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i__3__transformed {
+            get {
+                object obj = ResourceManager.GetObject("i-_3_-transformed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i__3__transformed__1_ {
+            get {
+                object obj = ResourceManager.GetObject("i-_3_-transformed (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i__3__transformed__2_ {
+            get {
+                object obj = ResourceManager.GetObject("i-_3_-transformed (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
