@@ -48,9 +48,9 @@ namespace casino
             // button3
             // 
             this.button3.BackgroundImage = global::casino.Properties.Resources.Hamster_Kombat_PNG_1_transformed;
-            this.button3.Location = new System.Drawing.Point(273, 195);
+            this.button3.Location = new System.Drawing.Point(273, 191);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(259, 243);
+            this.button3.Size = new System.Drawing.Size(279, 247);
             this.button3.TabIndex = 10;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);

@@ -37,6 +37,10 @@ namespace casino
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -124,6 +128,44 @@ namespace casino
             this.label3.TabIndex = 14;
             this.label3.Text = "Хамстер Криминал";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.Location = new System.Drawing.Point(37, 453);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(107, 20);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "MORELESS";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.Location = new System.Drawing.Point(208, 453);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(125, 20);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "Лавка кабана";
+            // 
+            // button9
+            // 
+            this.button9.Image = global::casino.Properties.Resources._094a2fb9_71c1_49bc_abcd_6f16344b9571_transformed;
+            this.button9.Location = new System.Drawing.Point(187, 312);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(169, 138);
+            this.button9.TabIndex = 17;
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Image = global::casino.Properties.Resources.unnamed_transformed;
+            this.button8.Location = new System.Drawing.Point(14, 312);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(169, 138);
+            this.button8.TabIndex = 15;
+            this.button8.UseVisualStyleBackColor = true;
+            // 
             // button7
             // 
             this.button7.Image = global::casino.Properties.Resources.i__3__transformed__2_;
@@ -177,7 +219,7 @@ namespace casino
             // 
             this.button1.BackColor = System.Drawing.SystemColors.Control;
             this.button1.Image = global::casino.Properties.Resources._1win_casino_1024x434_transformed;
-            this.button1.Location = new System.Drawing.Point(669, 12);
+            this.button1.Location = new System.Drawing.Point(684, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(119, 53);
             this.button1.TabIndex = 0;
@@ -188,7 +230,11 @@ namespace casino
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(815, 497);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.label7);
@@ -228,6 +274,10 @@ namespace casino
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button button9;
     }
 }
 

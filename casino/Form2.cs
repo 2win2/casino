@@ -39,7 +39,7 @@ namespace casino
             int col = roulette.Next(0, 37);
             if (col == 0 && numPlayer == 0)
             {
-                BalancePlayer += X * 35;
+                BalancePlayer += X * 36;
                 label1.Text = String.Format("Баланс\n{0:F2} руб.", BalancePlayer);
                 label6.Text = String.Format("0", 0);
                 label2.Text = String.Format("Вы выйграли\n{0:F2} руб.", X * 35);
@@ -48,7 +48,7 @@ namespace casino
             }
             if (BlackNumber.Contains(col) && BlackNumber.Contains(numPlayer) && col == numPlayer)
             {
-                BalancePlayer += X * 35;
+                BalancePlayer += X * 36;
                 label1.Text = String.Format("Баланс\n{0:F2} руб.", BalancePlayer);
                 label6.Text = String.Format("{0}", col);
                 label2.Text = String.Format("Вы выйграли\n{0:F2} руб.", X * 35);
@@ -57,7 +57,7 @@ namespace casino
             }
             if (RedNumber.Contains(col) && RedNumber.Contains(numPlayer) && col == numPlayer)
             {
-                BalancePlayer += X * 35;
+                BalancePlayer += X * 36;
                 label1.Text = String.Format("Баланс\n{0:F2} руб.", BalancePlayer);
                 label6.Text = String.Format("{0}", col);
                 label2.Text = String.Format("Вы выйграли\n{0:F2} руб.", X * 35);
@@ -110,7 +110,7 @@ namespace casino
 
             if (col == 0 && colPlayer == 0)
             {
-                BalancePlayer += X * 20;
+                BalancePlayer += X * 36;
                 label1.Text = String.Format("Баланс\n{0:F2} руб.", BalancePlayer);
                 label6.Text = String.Format("0", 0);
                 label2.Text = String.Format("Вы выйграли\n{0:F2} руб.", X * 20);
@@ -119,7 +119,7 @@ namespace casino
             }
             if (BlackNumber.Contains(col) && colPlayer == 1)
             {
-                BalancePlayer += X * 0.9;
+                BalancePlayer += X;
                 label1.Text = String.Format("Баланс\n{0:F2} руб.", BalancePlayer);
                 label6.Text = String.Format("{0}", BlackNumber[roulette.Next(0, 18)]);
                 label2.Text = String.Format("Вы выйграли\n{0:F2} руб.", X * 0.9);
@@ -128,7 +128,7 @@ namespace casino
             }
             if(RedNumber.Contains(col) && colPlayer == 2)
             {
-                BalancePlayer += X * 0.9;
+                BalancePlayer += X;
                 label1.Text = String.Format("Баланс\n{0:F2} руб.", BalancePlayer);
                 label6.Text = String.Format("{0}", RedNumber[roulette.Next(0, 18)]);
                 label2.Text = String.Format("Вы выйграли\n{0:F2} руб.", X * 0.9);
@@ -184,11 +184,6 @@ namespace casino
         private void button5_Click(object sender, EventArgs e)
         {
             CheckColor(2);
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            CheckColor(0);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -387,6 +382,11 @@ namespace casino
         private void button42_Click(object sender, EventArgs e)
         {
             CheckNumber(0);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

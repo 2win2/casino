@@ -63,6 +63,16 @@ namespace casino.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _094a2fb9_71c1_49bc_abcd_6f16344b9571_transformed {
+            get {
+                object obj = ResourceManager.GetObject("094a2fb9-71c1-49bc-abcd-6f16344b9571-transformed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1win_casino_1024x434 {
             get {
                 object obj = ResourceManager.GetObject("1win-casino-1024x434", resourceCulture);
@@ -246,6 +256,26 @@ namespace casino.Properties {
         internal static System.Drawing.Bitmap speaker_azzurro_9 {
             get {
                 object obj = ResourceManager.GetObject("speaker_azzurro_9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap unnamed {
+            get {
+                object obj = ResourceManager.GetObject("unnamed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap unnamed_transformed {
+            get {
+                object obj = ResourceManager.GetObject("unnamed-transformed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
